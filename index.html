@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pizza Form</title>
+
+        <style>
+
+            .form{
+                border: 2px solid black;
+                padding:4px;
+                width:300px;
+            }
+
+            .style1{
+                margin-top: 0;
+                font-size:30px;
+                font-weight:bold;
+                color:black;
+            }
+
+            .style2{
+                font-size:22px;
+                font-weight:bold;
+                color:black;
+            }
+
+            .table1, th, td{
+                border:1px solid black;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <form class="form">
+
+        <p class="style1">Pizza Ordering Form</p>
+
+        <p class="style2">Contact Information</p>
+
+        <label for="name">Name:</label> 
+        <input type="text" id ="name" name="name" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required><br>
+
+
+        <p class="style2">Select Pizza Size</p>
+
+        <label for="sizes">Pizza Size:</label>
+        <select id="sizes" name="sizes" required>
+        <option value="">--Select Size--</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="xlarge">XLarge</option>
+        </select>
+
+
+        <p class="style2">Select Sauce</p>
+
+        <input type="radio" id="marinara" name="sauce" value="marinara" required>
+        <label for="marinara">Marinara</label><br>
+        <input type="radio" id="ranch" name="sauce" value="ranch">
+        <label for="ranch">Ranch</label><br>
+        <input type="radio" id="nosauce" name="sauce" value="nosauce">
+        <label for="nosauce">No Sauce</label><br>
+
+
+        <p class="style2">Select Toppings:</p>
+
+        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+
+        <input type="checkbox" id="sausage" name="topping" value="sausage">
+        <label for="sausage">Sausage</label>
+        <br>
+
+        <input type="checkbox" id="mushroom" name="topping" value="mushroom">
+        <label for="mushroom">Mushroom</label>
+
+        <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+        <label for="pineapple">Pineapple</label>
+        <br>
+
+        <input type="checkbox" id="peppers" name="topping" value="peppers">
+        <label for="peppers">Peppers</label>
+
+        <input type="checkbox" id="onions" name="topping" value="onions">
+        <label for="onions">Onions</label>
+
+        <p class="style2">Additional Instructions</p>
+        <textarea name="additionalInstructions" rows="2" cols="20" placeholder="Add instructions"></textarea><br>
+
+        <input type="Submit" value="Submit"><br><br><br>
+
+        <table class="table1">
+            <thead>
+                <tr>
+                    <th>Developer</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Bungie</td>
+                    <td>Halo</td>
+                    <td>2001</td>
+                </tr>
+                <tr>
+                    <td>Halo 2</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>Halo 3</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>Mojang</td>
+                    <td>Minecraft</td>
+                    <td>2001</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Count: 4</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+    </form>
+
+    </body>
+
+
+</html>
