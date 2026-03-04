@@ -1,0 +1,37 @@
+body {
+    background-color: #8fb6c3;
+    font-family: serif;
+}
+
+#box {
+    width: 650px;
+    margin: 40px auto;
+    background: #eee;
+    padding: 30px;
+    border-radius: 40px;
+    border: 8px solid #d49a1c;
+    text-align: center;
+}
+
+img {
+    width: 220px;
+}
+
+.movegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.teamcard {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.teamcard img {
+    width: 90px;
+    margin-right: 20px;
+}
